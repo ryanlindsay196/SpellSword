@@ -1,0 +1,25 @@
+diff a/ConsolidatedProject/Spellsword/Assets/Resources/Save1.txt b/ConsolidatedProject/Spellsword/Assets/Resources/Save1.txt	(rejected hunks)
+@@ -14,17 +14,16 @@
+ 
+ [[Stats]]
+ [Health=100]
+-
++[HealthUpgrades=2]
++[ManaUpgrades=4]
+ 
+ [[LevelToLoad]]
+-[Name=Ryan_SampleScene/Obelisk=1]
+-
++[Name=Catacombs]
+ 
+ [[LevelData]]
+ [LevelName=Catacombs]
+ [ObjectName=FireballSpell/State=0]
+ [ObjectName=FirstVineBarrier/State=0]
+-[LevelName=Ryan_SampleScene]
++[LevelName=Level2]
+ [ObjectName=CrossSectionDoor/State=0]
+-[ObjectName=IceSpell/State=0]
+-[ObjectName=Cylinder/State=0]
++[ObjectName=IceSpell/State=0]
+\ No newline at end of file

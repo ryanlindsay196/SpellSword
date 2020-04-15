@@ -1,0 +1,36 @@
+[[Spells]]
+[Name=Fireball/Level=1]
+[Name=Frost/Level=0]
+[Name=Shock Orb/Level=0]
+[Name=Corrosion/Level=0]
+
+
+[[Enchantments]]
+[Name=Dragon Skin/Level=0]
+[Name=Fury/Level=0]
+
+
+[[Stats]]
+[Health=100]
+
+
+[[LevelToLoad]]
+[Name=Catacombs/Obelisk=0]
+
+
+[[LevelData]]
+[LevelName=Catacombs]
+[ObjectName=FireballSpell/State=0]
+[ObjectName=FirstVineBarrier/State=0]
+[ObjectName=Cylinder (19)/State=0]
+[ObjectName=HowToAttack/State=1]
+[ObjectName=HowToSave/State=1]
+[ObjectName=HowToMove/State=1]
+[ObjectName=SpellExposition/State=1]
+[ObjectName=ManaRegen/State=0]
+[ObjectName=Boss Fight/State=0]
+[ObjectName=SpellUsage/State=1]
+[LevelName=Ryan_SampleScene]
+[ObjectName=CrossSectionDoor/State=0]
+[ObjectName=IceSpell/State=0]
+[ObjectName=Cylinder/State=0]

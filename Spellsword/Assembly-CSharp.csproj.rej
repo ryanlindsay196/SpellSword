@@ -1,0 +1,9 @@
+diff a/ConsolidatedProject/Spellsword/Assembly-CSharp.csproj b/ConsolidatedProject/Spellsword/Assembly-CSharp.csproj	(rejected hunks)
+@@ -75,7 +75,6 @@
+     <Compile Include="Assets\Scripts\EnemyStats.cs" />
+     <Compile Include="Assets\Scripts\MenuSelection.cs" />
+     <Compile Include="Assets\Scripts\Objects\Pickups\PagePickup.cs" />
+-    <Compile Include="Assets\Scripts\Objects\SavableObject.cs" />
+     <Compile Include="Assets\Scripts\Objects\SaveObelisk.cs" />
+     <Compile Include="Assets\Scripts\Objects\SpawnVine.cs" />
+     <Compile Include="Assets\Scripts\Objects\Spell Interactable Objects\SpellInteractableObject.cs" />

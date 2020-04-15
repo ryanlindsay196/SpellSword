@@ -1,0 +1,28 @@
+diff a/ConsolidatedProject/Spellsword/Assets/Scripts/Player/PlayerStats.cs b/ConsolidatedProject/Spellsword/Assets/Scripts/Player/PlayerStats.cs	(rejected hunks)
+@@ -34,25 +34,11 @@
+         set { currentHealth = value; }
+     }
+ 
+-    SaveObelisk[] allObelisks;
+-    SaveFileLoader saveFileLoader;
+-
+     // Start is called before the first frame update
+     void Start()
+     {
+-        saveFileLoader = FindObjectOfType<SaveFileLoader>();
+-        allObelisks = FindObjectsOfType<SaveObelisk>();
+         //playerSoundManager = GameObject.FindObjectOfType<PlayerSoundManager>();
+-        //lastSaveObelisk = GameObject.FindObjectOfType<SaveObelisk>();
+-        for (int i = 0; i < allObelisks.Length; i++)
+-        {
+-            if (saveFileLoader.ObeliskNumber == i)
+-            {
+-                lastSaveObelisk = allObelisks[i];
+-                break;
+-            }
+-        }
+-
++        lastSaveObelisk = GameObject.FindObjectOfType<SaveObelisk>();
+         currentMana = maxMana;
+         currentHealth = maxHealth;
+     }

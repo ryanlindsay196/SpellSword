@@ -33964,7 +33964,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4253285919565715188
 Transform:
   m_ObjectHideFlags: 0
@@ -33992,7 +33992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetsInRange: []
-  maxAngleForAutoAim: 6.28
+  maxAngleForAutoAim: 0
 --- !u!135 &5002733431143477014
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -35295,16 +35295,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 756213819139072591}
     m_Modifications:
-    - target: {fileID: 6800695135555352924, guid: a77b6249d544b074b8c1fcbcd90ba486,
-        type: 3}
-      propertyPath: m_Name
-      value: DeathCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 6800695135555352924, guid: a77b6249d544b074b8c1fcbcd90ba486,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 6800695135555352925, guid: a77b6249d544b074b8c1fcbcd90ba486,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35410,6 +35400,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6800695135555352924, guid: a77b6249d544b074b8c1fcbcd90ba486,
+        type: 3}
+      propertyPath: m_Name
+      value: DeathCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6800695135555352924, guid: a77b6249d544b074b8c1fcbcd90ba486,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77b6249d544b074b8c1fcbcd90ba486, type: 3}
 --- !u!224 &8325650398336037984 stripped
@@ -35431,26 +35431,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 756213819661596250}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerArms_3-15-2020
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3643468007634137549, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: dcff50910a389714ca8783cb34bf32b6, type: 2}
     - target: {fileID: -4216859302048453862, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35520,6 +35500,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: dcff50910a389714ca8783cb34bf32b6, type: 2}
+    - target: {fileID: -927199367670048503, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerArms_3-15-2020
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3643468007634137549, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2395823112672405650, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
         type: 3}

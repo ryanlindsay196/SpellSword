@@ -113,7 +113,7 @@ public class EquipmentManager : MonoBehaviour
             playerStats.SaveNearestObelisk();
         }
         #region auto aim
-        if (playerAimAssist.TargetsInRange.Count > 0)
+        if (playerAimAssist != null && playerAimAssist.TargetsInRange.Count > 0)
         {
             Debug.Log("Number of Targets: " + playerAimAssist.TargetsInRange.Count);
             playerAimAssist.RemoveNullTargets();

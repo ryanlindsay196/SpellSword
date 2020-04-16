@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/ThePit.unity
-=======
 - path: Assets/Scenes/MainMenu.unity
->>>>>>> 6078f853bafea8c27ecad0285b2d05283a790c1e
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -19,9 +19,9 @@ public class Weaver_Fireball : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        jeffrey = GameObject.FindGameObjectWithTag("Weaver");
-        GetComponent<Rigidbody>().velocity = new Vector3(player.transform.position.x - jeffrey.transform.position.x, player.transform.position.y - 2, player.transform.position.z - jeffrey.transform.position.z) * speed;
+        player = FindObjectOfType<CharacterMovement>().gameObject;
+        jeffrey = FindObjectOfType<AI_Weaver>().gameObject;
+        gameObject.GetComponent<Rigidbody>().velocity = new Vector3(player.transform.position.x - jeffrey.transform.position.x, player.transform.position.y - 2, player.transform.position.z - jeffrey.transform.position.z) * speed;
 
         fireballImpact.SetActive(false);
         fireball.SetActive(true);

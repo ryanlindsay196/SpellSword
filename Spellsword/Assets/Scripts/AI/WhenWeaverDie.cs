@@ -23,7 +23,7 @@ public class WhenWeaverDie : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        teleportThisGuy = GameObject.FindGameObjectWithTag("Player");
+        teleportThisGuy = FindObjectOfType<CharacterMovement>().gameObject;
     }
 
     // Update is called once per frame

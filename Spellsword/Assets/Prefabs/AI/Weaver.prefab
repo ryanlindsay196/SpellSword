@@ -2377,7 +2377,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 72d0a75afc617514b961d5a166860a0b, type: 3}
   hitSound: {fileID: 8300000, guid: 195461672ebf9ae4b85a2a78cc60ca20, type: 3}
   health: 0
-  maxHealth: 20
+  maxHealth: 30
   swordDamagePercent: 15
   fireDamagePercent: 20
   iceDamagePercent: 0
@@ -2396,7 +2396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myAIState: 0
-  enemyHealth: 20
+  enemyHealth: 30
   fireRate: 2
   spawn: {fileID: 7164835590186383433}
   projectile: {fileID: 428037543743729382, guid: 637ab9b1da689984f9dbd3a2ad840fd8,

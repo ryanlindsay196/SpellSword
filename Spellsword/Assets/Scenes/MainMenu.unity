@@ -252,6 +252,9 @@ MonoBehaviour:
   - text: Load Game
     optionType: 0
     linkedObject: {fileID: 410362728}
+  - text: Options
+    optionType: 0
+    linkedObject: {fileID: 0}
   - text: Quit
     optionType: 5
     linkedObject: {fileID: 0}

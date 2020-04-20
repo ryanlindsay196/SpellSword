@@ -634,7 +634,6 @@ GameObject:
   - component: {fileID: 7864104099932179765}
   - component: {fileID: -8664064137434004427}
   - component: {fileID: 2162576735234282559}
-  - component: {fileID: 7864104099932179762}
   - component: {fileID: 7864104099932179763}
   - component: {fileID: 7864104099932179760}
   - component: {fileID: 2162576735234282556}
@@ -734,21 +733,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &7864104099932179762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2162576735234282558}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45ffa899efd4b0148bc483cdf836eef0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 0.2
-  destroyOnHit: 0
-  hitCoolDown: 0.4
 --- !u!114 &7864104099932179763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1914,6 +1898,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3336358653904005702}
+  - component: {fileID: 4147348253265449928}
+  - component: {fileID: 7103147929138470891}
   m_Layer: 0
   m_Name: Bip001 R Hand
   m_TagString: Untagged
@@ -1940,6 +1926,34 @@ Transform:
   m_Father: {fileID: 8498845255691858356}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4147348253265449928
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5627195356382222781}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9361716, y: 0.8494971, z: 0.699476}
+  m_Center: {x: 0.03191554, y: 0.25015, z: -0.10562067}
+--- !u!114 &7103147929138470891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5627195356382222781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ffa899efd4b0148bc483cdf836eef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
+  destroyOnHit: 0
+  hitCoolDown: 0.5
 --- !u!1 &5793487694180797160
 GameObject:
   m_ObjectHideFlags: 0

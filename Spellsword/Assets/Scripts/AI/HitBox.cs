@@ -34,7 +34,7 @@ public class HitBox : MonoBehaviour
             }
         }
     }
-    public void OnCollisionStay(Collision collision)
+    /*public void OnCollisionStay(Collision collision)
     {
         if (this.gameObject.tag == "Ghoul")
         {
@@ -45,6 +45,17 @@ public class HitBox : MonoBehaviour
                 {
                     Destroy(gameObject);
                 }
+            }
+        }
+    }*/
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.GetComponent<PlayerStats>() != null)
+        {
+            collision.gameObject.GetComponent<PlayerStats>().DamagePlayer(damage);
+            if (destroyOnHit)
+            {
+                Destroy(gameObject);
             }
         }
     }

@@ -222,7 +222,7 @@ public class AI_Brawler : MonoBehaviour
                 
                 break;
             case AIState.Attack:
-                gameObject.GetComponent<HitBox>().enabled = true;
+                //gameObject.GetComponent<HitBox>().enabled = true;
                 if (SecondsInCurrentState >= 0.2f)
                 {
                     SetAIState(AIState.Pursue);
@@ -299,7 +299,7 @@ public class AI_Brawler : MonoBehaviour
             gameObject.GetComponent<NavMeshAgent>().speed = 1.5f;
             gameObject.GetComponent<NavMeshAgent>().acceleration = 4.0f;
             gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
-            gameObject.GetComponent<HitBox>().enabled = false;
+            //gameObject.GetComponent<HitBox>().enabled = false;
             myAIState = newState;
             SecondsInCurrentState = 0.0f;
 
@@ -307,18 +307,18 @@ public class AI_Brawler : MonoBehaviour
             switch(myAIState)
             {
                 case AIState.Patrol:
-                    gameObject.GetComponent<HitBox>().enabled = false;
+                    //gameObject.GetComponent<HitBox>().enabled = false;
                     gameObject.GetComponent<Animator>().SetBool("Look", false);
                     gameObject.GetComponent<Animator>().SetBool("Patrol", true);
                     gameObject.GetComponent<Animator>().SetBool("Confused", false);
-                    gameObject.GetComponent<AudioSource>().clip = ghoulWalk;
-                    gameObject.GetComponent<AudioSource>().Play();
+                    /*gameObject.GetComponent<AudioSource>().clip = ghoulWalk;
+                    gameObject.GetComponent<AudioSource>().Play();*/
                     break;
                 case AIState.Look:
-                    gameObject.GetComponent<HitBox>().enabled = false;
+                    //gameObject.GetComponent<HitBox>().enabled = false;
                     gameObject.GetComponent<Animator>().SetBool("Look", true);
                     gameObject.GetComponent<Animator>().SetBool("Patrol", false);
-                    gameObject.GetComponent<AudioSource>().Pause();
+                    //gameObject.GetComponent<AudioSource>().Pause();
                     break;
                 case AIState.Pursue:
                     agent.destination = tarPos;
@@ -328,24 +328,24 @@ public class AI_Brawler : MonoBehaviour
                     gameObject.GetComponent<Animator>().SetBool("Pursue", true);
                     gameObject.GetComponent<Animator>().SetBool("Patrol", false);
                     gameObject.GetComponent<Animator>().SetBool("Look", false);
-                    gameObject.GetComponent<AudioSource>().clip = ghoulRun;
-                    gameObject.GetComponent<AudioSource>().Play();
-                    gameObject.GetComponent<HitBox>().enabled = false;
+                    /*gameObject.GetComponent<AudioSource>().clip = ghoulRun;
+                    gameObject.GetComponent<AudioSource>().Play();*/
+                    //gameObject.GetComponent<HitBox>().enabled = false;
                     break;
                 case AIState.Attack:
                     Debug.Log("Hey Batter Batter");
                     /*gameObject.GetComponent<Animator>().SetBool("Pursue", false);
                     gameObject.GetComponent<Animator>().SetBool("Patrol", false);
                     gameObject.GetComponent<Animator>().SetBool("Look", false);*/
-                    gameObject.GetComponent<HitBox>().enabled = true;
+                    //gameObject.GetComponent<HitBox>().enabled = true;
                     break;
                 case AIState.Confused:
-                    gameObject.GetComponent<HitBox>().enabled = false;
+                    //gameObject.GetComponent<HitBox>().enabled = false;
                     gameObject.GetComponent<Animator>().SetBool("Pursue", false);
                     gameObject.GetComponent<Animator>().SetBool("Patrol", false);
                     gameObject.GetComponent<Animator>().SetBool("Look", false);
                     gameObject.GetComponent<Animator>().SetBool("Confused", true);
-                    gameObject.GetComponent<AudioSource>().Pause();
+                    //gameObject.GetComponent<AudioSource>().Pause();
                     agent.destination = currPos;
                     break;
             }

@@ -606,6 +606,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8408964261972793466}
+  - component: {fileID: 1927740168406434432}
+  - component: {fileID: 7926447616195809534}
   m_Layer: 0
   m_Name: Bip001 R Hand
   m_TagString: Untagged
@@ -632,6 +634,34 @@ Transform:
   m_Father: {fileID: 3390773250810086280}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1927740168406434432
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506547162329885569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9361716, y: 0.8494971, z: 0.699476}
+  m_Center: {x: 0.03191554, y: 0.25015, z: -0.10562067}
+--- !u!114 &7926447616195809534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506547162329885569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ffa899efd4b0148bc483cdf836eef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
+  destroyOnHit: 0
+  hitCoolDown: 0.5
 --- !u!1 &1610717513067121473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2190,7 +2220,6 @@ GameObject:
   - component: {fileID: 3728520019603166413}
   - component: {fileID: 6440072311290469837}
   - component: {fileID: 4656634201484709319}
-  - component: {fileID: 3728520019603166410}
   - component: {fileID: 3728520019603166411}
   - component: {fileID: 4656634201484709317}
   - component: {fileID: 4656634201484709316}
@@ -2293,21 +2322,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &3728520019603166410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4656634201484709318}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45ffa899efd4b0148bc483cdf836eef0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 0.2
-  destroyOnHit: 0
-  hitCoolDown: 0.4
 --- !u!114 &3728520019603166411
 MonoBehaviour:
   m_ObjectHideFlags: 0

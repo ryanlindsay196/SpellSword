@@ -149,9 +149,6 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -176,6 +173,33 @@
     <Reference Include="Unity.Timeline">
       <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Editor">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
@@ -188,20 +212,8 @@
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
       <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
@@ -209,23 +221,8 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
       <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>

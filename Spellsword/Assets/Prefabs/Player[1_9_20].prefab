@@ -33958,7 +33958,7 @@ GameObject:
   - component: {fileID: 1889565870687498575}
   - component: {fileID: 5002733431143477014}
   - component: {fileID: 8590757867442408845}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: TargetFinder
   m_TagString: Player
   m_Icon: {fileID: 0}

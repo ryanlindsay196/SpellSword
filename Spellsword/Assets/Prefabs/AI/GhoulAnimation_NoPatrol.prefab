@@ -2218,6 +2218,7 @@ GameObject:
   - component: {fileID: 8558222454210215893}
   - component: {fileID: 1751594844853899951}
   - component: {fileID: 3728520019603166413}
+  - component: {fileID: 5282702463220447358}
   - component: {fileID: 6440072311290469837}
   - component: {fileID: 4656634201484709319}
   - component: {fileID: 3728520019603166411}
@@ -2283,7 +2284,20 @@ CapsuleCollider:
   m_Radius: 1.4
   m_Height: 7.7914357
   m_Direction: 1
-  m_Center: {x: 0, y: 2.54, z: 0.18}
+  m_Center: {x: 0, y: 2.54, z: -0.5}
+--- !u!65 &5282702463220447358
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4656634201484709318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 4.9055486, y: 7.5470567, z: 4.851132}
+  m_Center: {x: 0.09398216, y: 3.2735276, z: 0.6423518}
 --- !u!54 &6440072311290469837
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2310,7 +2324,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2.5
+  m_Speed: 2.8
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 628
@@ -2365,7 +2379,7 @@ MonoBehaviour:
   ghoulRun: {fileID: 8300000, guid: 066fabb7aa8f841428c7801fbe4c8a91, type: 3}
   spottedHim: 0
   patrolRoute: []
-  attackRange: 1
+  attackRange: 2
   updateThis: 0
 --- !u!82 &4656634201484709316
 AudioSource:
@@ -2475,6 +2489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2386677e343f7f47bd506da20202438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetTransform: {fileID: 0}
   isTargeted: 0
   meshRenderer: {fileID: 3593632039874530343}
   meshMat: {fileID: 2100000, guid: 753dc2c62ba9cb3499330297cd54f415, type: 2}

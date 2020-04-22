@@ -694,7 +694,7 @@ CapsuleCollider:
   m_Radius: 1.4
   m_Height: 7.7914357
   m_Direction: 1
-  m_Center: {x: 0, y: 2.54, z: 0.18}
+  m_Center: {x: 0, y: 2.54, z: -0.5}
 --- !u!54 &-8664064137434004427
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -886,6 +886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2386677e343f7f47bd506da20202438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetTransform: {fileID: 0}
   isTargeted: 0
   meshRenderer: {fileID: 7719347580152806939}
   meshMat: {fileID: 2100000, guid: 753dc2c62ba9cb3499330297cd54f415, type: 2}

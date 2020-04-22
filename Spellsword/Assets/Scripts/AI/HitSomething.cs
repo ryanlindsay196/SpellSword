@@ -46,7 +46,10 @@ public class HitSomething : MonoBehaviour
                 }
                 StartCoroutine(DelayForASecond());
             }
-            //Destroy(gameObject);
+            else
+            {
+                Destroy(gameObject);
+            }
         }
         else if (collision.transform.tag != "Flying Skull")
         {

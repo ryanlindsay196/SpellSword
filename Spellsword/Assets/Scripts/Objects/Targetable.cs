@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class Targetable : MonoBehaviour
 {
+    [SerializeField]
+    Transform targetTransform;
+    public Transform TargetTransform
+    {
+        get { if (targetTransform != null) return targetTransform;
+              else return transform; }
+    }
+
     public bool isTargeted;
     [SerializeField]
     SkinnedMeshRenderer meshRenderer;

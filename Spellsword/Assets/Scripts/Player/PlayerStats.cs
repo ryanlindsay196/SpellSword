@@ -155,7 +155,7 @@ public class PlayerStats : MonoBehaviour
             }
         }
 
-        playerSoundManager.PlaySound(2);
+        playerSoundManager.PlaySound(2, 0, false);
         Debug.Log("PlayerStats::DamagePlayer(float)::" + in_Damage + "damage taken");
         currentHealth -= in_Damage;
         //if (currentHealth <= 0)

@@ -208,7 +208,7 @@ public class CharacterMovement : MonoBehaviour
             Debug.Log("AutoAim Target: " + autoAimTarget.gameObject.name);
             //GetComponent<EquipmentManager>().PlayerAimAssist.RemoveNullTargets();
             Quaternion tempCameraHolderRotation = cameraHolder.transform.rotation;
-            cameraHolder.transform.LookAt(autoAimTarget);
+            cameraHolder.transform.LookAt(autoAimTarget.GetComponent<Targetable>().TargetTransform);
 
             cameraHolder.transform.rotation = Quaternion.Lerp(tempCameraHolderRotation, cameraHolder.transform.rotation, autoAimSpeed);
         }

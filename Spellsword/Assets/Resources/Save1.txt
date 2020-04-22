@@ -15,7 +15,7 @@
 
 
 [[LevelToLoad]]
-[Name=Catacombs/Obelisk=1]
+[Name=Catacombs/Obelisk=3]
 
 
 [[LevelData]]

@@ -76,6 +76,9 @@
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
       <HintPath>D:/Game 490 New/Spellsword/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Editor">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>D:/Game 490 New/Spellsword/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -101,16 +104,52 @@
       <HintPath>D:/Game 490 New/Spellsword/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
+<<<<<<< HEAD
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-weaver.Editor">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+=======
       <HintPath>D:/Game 490 New/Spellsword/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+>>>>>>> 349934b24b99e04c1c04783d4a8461e73b657a0c
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
       <HintPath>D:/Game 490 New/Spellsword/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+=======
     <Reference Include="com.unity.multiplayer-weaver.Editor">
       <HintPath>D:/Game 490 New/Spellsword/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>D:/Game 490 New/Spellsword/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+>>>>>>> 349934b24b99e04c1c04783d4a8461e73b657a0c
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>D:/Game 490 New/Spellsword/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
@@ -118,6 +157,10 @@
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
       <HintPath>D:/Game 490 New/Spellsword/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+=======
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>D:/Game 490 New/Spellsword/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
@@ -144,12 +187,16 @@
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>D:/Game 490 New/Spellsword/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+>>>>>>> 349934b24b99e04c1c04783d4a8461e73b657a0c
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
       <HintPath>D:/Game 490 New/Spellsword/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/Game 490 New/Spellsword/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/Ryan/Desktop/Capstone/Game/Spell Sword 2/Spellsword/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>D:/Game 490 New/Spellsword/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>

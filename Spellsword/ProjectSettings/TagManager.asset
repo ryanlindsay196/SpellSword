@@ -4,13 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ghoul
+  - StandHere
+  - LookHere
   - PatrolPoint
-  - Projectile
+  - Ghoul
   - Spawner
-  - Weaver
-  - Bullet
+  - Projectile
   - Plant
+  - Bullet
+  - Weaver
+  - Flying Skull
+  - targetFinder
   layers:
   - Default
   - TransparentFX
@@ -20,13 +24,13 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Spell
+  - Sword
+  - Weapons
+  - Enemies
+  - PlayerHurtBox
+  - PostProcessing
   - 
   - 
   - 

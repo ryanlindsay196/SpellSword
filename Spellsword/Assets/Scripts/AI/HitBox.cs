@@ -53,10 +53,18 @@ public class HitBox : MonoBehaviour
         if (collision.gameObject.GetComponent<PlayerStats>() != null)
         {
             collision.gameObject.GetComponent<PlayerStats>().DamagePlayer(damage);
+            gameObject.GetComponent<BoxCollider>().enabled = false;
+            StartCoroutine(ReEnable());
             if (destroyOnHit)
             {
                 Destroy(gameObject);
             }
         }
+    }
+
+    IEnumerator ReEnable()
+    {
+        yield return new WaitForSeconds(0.4f);
+        gameObject.GetComponent<BoxCollider>().enabled = true;
     }
 }

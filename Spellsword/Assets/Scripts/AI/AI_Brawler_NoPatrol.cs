@@ -224,7 +224,8 @@ public class AI_Brawler_NoPatrol : MonoBehaviour
                 break;
             case AIState.Attack:
                 //gameObject.GetComponent<HitBox>().enabled = true;
-                if (SecondsInCurrentState >= 0.2f)
+                agent.destination = currPos;
+                if (SecondsInCurrentState >= 0.4f)
                 {
                     SetAIState(AIState.Pursue);
                 }
@@ -324,7 +325,7 @@ public class AI_Brawler_NoPatrol : MonoBehaviour
                 case AIState.Pursue:
                     agent.destination = tarPos;
                     Jeffery.transform.forward = Vector3.RotateTowards(Jeffery.transform.forward, targetPosition, 9.51f * Time.deltaTime, float.PositiveInfinity);
-                    gameObject.GetComponent<NavMeshAgent>().speed = 8.0f;
+                    gameObject.GetComponent<NavMeshAgent>().speed = 10.0f;
                     gameObject.GetComponent<NavMeshAgent>().acceleration = 10.0f;
                     gameObject.GetComponent<Animator>().SetBool("Pursue", true);
                     gameObject.GetComponent<Animator>().SetBool("Patrol", false);

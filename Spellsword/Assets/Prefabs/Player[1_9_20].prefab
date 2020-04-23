@@ -10757,7 +10757,8 @@ AudioSource:
   m_GameObject: {fileID: 756213819139072588}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 5afe5079e9c594e4e9f3e95df695f419,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -10853,7 +10854,8 @@ AudioSource:
   m_GameObject: {fileID: 756213819139072588}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 5afe5079e9c594e4e9f3e95df695f419,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -10949,7 +10951,8 @@ AudioSource:
   m_GameObject: {fileID: 756213819139072588}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 5afe5079e9c594e4e9f3e95df695f419,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -11045,7 +11048,8 @@ AudioSource:
   m_GameObject: {fileID: 756213819139072588}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 5afe5079e9c594e4e9f3e95df695f419,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -11154,7 +11158,8 @@ AudioSource:
   m_GameObject: {fileID: 756213819139072588}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 5afe5079e9c594e4e9f3e95df695f419,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -31188,7 +31193,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689024036692402403}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d75a9f44d3d73b242ba27aca256b61cd, type: 3}
@@ -32156,7 +32161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8862757369543245180
 Transform:
   m_ObjectHideFlags: 0
@@ -33518,7 +33523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8536638544986006639
 Transform:
   m_ObjectHideFlags: 0
@@ -34563,7 +34568,8 @@ AudioSource:
   m_GameObject: {fileID: 8641357381244151105}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: a480c97d660af934a9c22ccf5e6e3059,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: d75a9f44d3d73b242ba27aca256b61cd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.4
@@ -34808,7 +34814,7 @@ Transform:
   m_GameObject: {fileID: 8745833658799916321}
   m_LocalRotation: {x: 0.09281633, y: 0.0072723, z: -0.07777128, w: 0.9926147}
   m_LocalPosition: {x: 21.37, y: -34.23, z: 2.03}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children:
   - {fileID: 387933002341546403}
   - {fileID: 7352921171302491667}
@@ -35431,11 +35437,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: dcff50910a389714ca8783cb34bf32b6, type: 2}
     - target: {fileID: -4216859302048453862, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35506,6 +35507,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: dcff50910a389714ca8783cb34bf32b6, type: 2}
     - target: {fileID: 2395823112672405650, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
         type: 3}
       propertyPath: m_IsActive

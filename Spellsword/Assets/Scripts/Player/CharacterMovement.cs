@@ -203,7 +203,8 @@ public class CharacterMovement : MonoBehaviour
         cameraHolder.transform.eulerAngles = new Vector3(cameraHolder.transform.eulerAngles.x, cameraHolder.transform.eulerAngles.y, 0);
         #endregion
 
-        if(autoAimTarget != null)
+        //TEST CODE RenderSettings.ambientLight = new Color(UnityEngine.Random.Range(0, 1), 1, 1);
+        if (autoAimTarget != null)
         {
             Debug.Log("AutoAim Target: " + autoAimTarget.gameObject.name);
             //GetComponent<EquipmentManager>().PlayerAimAssist.RemoveNullTargets();

@@ -112,7 +112,7 @@ MonoBehaviour:
   damage: 20
   spellType: 1
   manaCost: 20
-  coolDownMaxTime: 2
+  coolDownMaxTime: 0.5
   speed: 15
   fireballImpact: {fileID: 881954926438483641}
   fireball: {fileID: 3643852451333676168}

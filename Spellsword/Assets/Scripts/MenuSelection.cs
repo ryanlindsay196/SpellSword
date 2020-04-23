@@ -32,7 +32,7 @@ public class MenuSelection : MonoBehaviour
     List<MenuOption> menuOptions;
 
     [System.Serializable]
-    struct MenuOptionValues
+    public struct MenuOptionValues
     {
         public enum OptionType { loadMenu, newGame, loadSave, changeSetting, back, quit }
         public string text;
@@ -77,8 +77,13 @@ public class MenuSelection : MonoBehaviour
         {
             menuOptions.Add(Instantiate<MenuOption>(optionPrefab, GetComponent<RectTransform>().anchoredPosition + new Vector2(distanceBetweenOptions * i * (isHorizontal ? 1 : 0), distanceBetweenOptions * i * (!isHorizontal ? 1 : 0)), Quaternion.identity, gameObject.transform));
             menuOptions[i].SetText(menuOptionValues[i].text);
-            //menuOptionss[i].option = Instantiate<MenuOption>(optionPrefab, GetComponent<RectTransform>().anchoredPosition + new Vector2(distanceBetweenOptions * i * (isVertical ? 1 : 0), distanceBetweenOptions * i * (!isVertical ? 1 : 0)), Quaternion.identity, gameObject.transform);
-            //menuOptionss[i].option.SetText(menuOptionss[i].text);
+
+            if(menuOptionValues[i].linkedObject != null && menuOptionValues[i].linkedObject.GetComponent<Slider>() != null)
+            {
+                menuOptionValues[i].linkedObject.transform.SetParent(menuOptions[i].transform);
+                menuOptionValues[i].linkedObject.transform.position = menuOptions[i].transform.position;
+                menuOptionValues[i].linkedObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -20);// = menuOptions[i].GetComponent<RectTransform>().anchoredPosition;
+            }
         }
     }
 
@@ -116,6 +121,15 @@ public class MenuSelection : MonoBehaviour
                     menuOptions[i].StopSelected();
                 }
             }
+
+            if (menuOptionValues[CurrentOptionOverride].optionType == MenuOptionValues.OptionType.changeSetting && menuOptionValues[CurrentOptionOverride].linkedObject.GetComponent<Slider>() != null)
+            {
+                if(Mathf.Abs(Input.GetAxis("Horizontal")) >= 0.4f)
+                {
+                    menuOptionValues[CurrentOptionOverride].linkedObject.GetComponent<Slider>().value += Mathf.Sign(Input.GetAxis("Horizontal")) / 100;
+                    SettingsManager.UpdateSetting(menuOptionValues[CurrentOptionOverride].linkedObject.GetComponent<Setting>().SettingType, menuOptionValues[CurrentOptionOverride].linkedObject.GetComponent<Slider>().value);
+                }
+            }
             #endregion
 
             #region Select menu option
@@ -146,6 +160,10 @@ public class MenuSelection : MonoBehaviour
                     SaveFileLoader.LoadFile("Assets/Resources/Save.txt", -1);
                     SaveFileLoader.SaveFileIndex = CurrentOptionOverride + 1;
                 }
+                //if(menuOptionValues[CurrentOptionOverride].optionType == MenuOptionValues.OptionType.changeSetting)
+                //{
+
+                //}
             }
             else if(Input.GetButtonDown("BackButton"))
             {

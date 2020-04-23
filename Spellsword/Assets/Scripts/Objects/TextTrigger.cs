@@ -7,7 +7,7 @@ public class TextTrigger : MonoBehaviour
 {
     SaveObelisk.ControllerTypes controllerType;
     [SerializeField]
-    TextMeshProUGUI displayControllerText, displayKeyboardText;
+    TextMeshProUGUI displayControllerText, displayKeyboardText, interactControllerText, interactKeyboardText;
 
     CharacterMovement characterMovement;
 
@@ -15,7 +15,7 @@ public class TextTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        controllerType = SaveObelisk.ControllerTypes.controller;
     }
 
     // Update is called once per frame
@@ -23,19 +23,10 @@ public class TextTrigger : MonoBehaviour
     {
         if(GetComponent<SavableObject>().GetState() >= 1 && !characterMovement.tutorialTextActive)
         {
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
             characterMovement.tutorialTextActive = false;
         }
-        if (Input.anyKeyDown)
-        {
-            controllerType = SaveObelisk.ControllerTypes.keyboard;
-            if (characterMovement != null && Input.GetButton("Interact"))
-            {
-                characterMovement.tutorialTextActive = false;
-                gameObject.SetActive(false);
-            }
-        }
-        else if (Input.GetKey(KeyCode.JoystickButton0) || Input.GetKey(KeyCode.JoystickButton1) || Input.GetKey(KeyCode.JoystickButton2) ||
+        if (Input.GetKey(KeyCode.JoystickButton0) || Input.GetKey(KeyCode.JoystickButton1) || Input.GetKey(KeyCode.JoystickButton2) ||
             Input.GetKey(KeyCode.JoystickButton3) || Input.GetKey(KeyCode.JoystickButton4) || Input.GetKey(KeyCode.JoystickButton5) ||
             Input.GetKey(KeyCode.JoystickButton6) || Input.GetKey(KeyCode.JoystickButton7) || Input.GetKey(KeyCode.JoystickButton8) ||
             Input.GetKey(KeyCode.JoystickButton9) || Input.GetKey(KeyCode.JoystickButton10) || Input.GetKey(KeyCode.JoystickButton11) ||
@@ -44,10 +35,59 @@ public class TextTrigger : MonoBehaviour
             Input.GetKey(KeyCode.JoystickButton18) || Input.GetKey(KeyCode.JoystickButton19))
         {
             controllerType = SaveObelisk.ControllerTypes.controller;
-            if (characterMovement != null && Input.GetButton("Interact"))
+            Debug.Log("Controller type: Controller");
+            if (characterMovement != null && Input.GetButtonDown("Interact"))
             {
-                characterMovement.tutorialTextActive = false;
-                gameObject.SetActive(false);
+                Interact();
+            }
+        }
+        else if (Input.anyKeyDown)
+        {
+            controllerType = SaveObelisk.ControllerTypes.keyboard;
+            Debug.Log("Controller type: Keyboard");
+            if (characterMovement != null && Input.GetButtonDown("Interact"))
+            {
+                Interact();
+            }
+        }
+
+    }
+
+    void Interact()
+    {///determine whether to activate or deactivate text box
+
+        Debug.Log("Text trigger interacted: " + controllerType.ToString());
+        if (characterMovement.tutorialTextActive)
+        {
+            characterMovement.tutorialTextActive = false;
+            displayControllerText.gameObject.SetActive(false);
+            displayKeyboardText.gameObject.SetActive(false);
+            if(controllerType == SaveObelisk.ControllerTypes.controller)
+                interactControllerText.gameObject.SetActive(true);
+            else if(controllerType == SaveObelisk.ControllerTypes.keyboard)
+                interactKeyboardText.gameObject.SetActive(true);
+            //gameObject.SetActive(false);
+        }
+        else
+            ActivateText();
+    }
+
+    void ActivateText()
+    {
+        if (characterMovement != null)//Make character not move
+        {
+            characterMovement.tutorialTextActive = true;
+            interactControllerText.gameObject.SetActive(false);
+            interactKeyboardText.gameObject.SetActive(false);
+
+            //Debug.Log("Text trigger interacted: " + controllerType.ToString());
+            if (controllerType == SaveObelisk.ControllerTypes.controller)
+            {
+                displayControllerText.gameObject.SetActive(true);
+            }
+            else if(controllerType == SaveObelisk.ControllerTypes.keyboard)
+            {
+                displayKeyboardText.gameObject.SetActive(true);
             }
         }
     }
@@ -57,20 +97,22 @@ public class TextTrigger : MonoBehaviour
         if(other.gameObject.GetComponent<CharacterMovement>() != null)
         {
             Debug.Log("TextTrigger::OnTriggerEnter(Collider)");
-            GetComponent<SavableObject>().UpdateObjectState(1);
             //DISPLAY TEXT
             if (controllerType == SaveObelisk.ControllerTypes.controller)
             {
-                displayControllerText.gameObject.SetActive(true);
+                interactControllerText.gameObject.SetActive(true);
             }
             else if (controllerType == SaveObelisk.ControllerTypes.keyboard)
             {
-                displayKeyboardText.gameObject.SetActive(true);
+                interactKeyboardText.gameObject.SetActive(true);
             }
-
-            //Make character not move
             characterMovement = other.gameObject.GetComponent<CharacterMovement>();
-            characterMovement.tutorialTextActive = true;
+
         }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        interactControllerText.gameObject.SetActive(false);
+        interactKeyboardText.gameObject.SetActive(false);
     }
 }

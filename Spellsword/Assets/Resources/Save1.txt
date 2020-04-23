@@ -15,7 +15,7 @@
 
 
 [[LevelToLoad]]
-[Name=Catacombs/Obelisk=3]
+[Name=Catacombs/Obelisk=-1]
 
 
 [[LevelData]]
@@ -24,12 +24,12 @@
 [ObjectName=FirstVineBarrier/State=0]
 [ObjectName=Cylinder (19)/State=0]
 [ObjectName=HowToAttack/State=1]
-[ObjectName=HowToSave/State=1]
-[ObjectName=HowToMove/State=1]
-[ObjectName=SpellExposition/State=1]
-[ObjectName=ManaRegen/State=1]
+[ObjectName=HowToSave/State=0]
+[ObjectName=HowToMove/State=0]
+[ObjectName=SpellExposition/State=0]
+[ObjectName=ManaRegen/State=0]
 [ObjectName=Boss Fight/State=0]
-[ObjectName=SpellUsage/State=1]
+[ObjectName=SpellUsage/State=0]
 [LevelName=Ryan_SampleScene]
 [ObjectName=CrossSectionDoor/State=0]
 [ObjectName=IceSpell/State=0]

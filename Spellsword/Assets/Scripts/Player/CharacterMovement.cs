@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -30,6 +31,9 @@ public class CharacterMovement : MonoBehaviour
 
     [SerializeField][Tooltip("Layer mask for the jump raycast")]
     LayerMask playerJumpLayerMask;
+
+    [SerializeField]
+    RectTransform pauseUI;
 
     #region components
     Rigidbody rigidBody;
@@ -73,6 +77,15 @@ public class CharacterMovement : MonoBehaviour
             Debug.Log("Aim assist target: " + autoAimTarget.name);
         float verticalAngle = mainCamera.transform.eulerAngles.x;
         float horizontalAngle = mainCamera.transform.eulerAngles.y;
+
+        if(Input.GetButtonDown("Pause"))
+        {
+            Debug.Log("Trying to pause game");
+            Time.timeScale = 0;
+            pauseUI.gameObject.SetActive(true);
+        }
+        if (Time.timeScale == 0)
+            return;
         if (!tutorialTextActive)
         {
             #region move player

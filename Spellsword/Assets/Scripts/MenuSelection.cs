@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 using System.IO;
 
@@ -34,7 +35,7 @@ public class MenuSelection : MonoBehaviour
     [System.Serializable]
     public struct MenuOptionValues
     {
-        public enum OptionType { loadMenu, newGame, loadSave, changeSetting, back, quit }
+        public enum OptionType { loadMenu, newGame, loadSave, changeSetting, back, quit, resume, quitToMenu }
         public string text;
         public OptionType optionType;
         public GameObject linkedObject;
@@ -66,6 +67,7 @@ public class MenuSelection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         if(!renderOnSceneLoad)
         {
             gameObject.SetActive(false);
@@ -98,9 +100,14 @@ public class MenuSelection : MonoBehaviour
         #region navigate between menu options
         if (true)//!GetComponent<CanvasRenderer>().cull)
         {
+            Debug.Log("Timescale = " + Time.timeScale);
+            //if (Time.timeScale < 0.5)
+            //    newOptionTimer = newOptionMaxTime;
             if (newOptionTimer < newOptionMaxTime)
+            {
                 newOptionTimer += Time.deltaTime;
-            else if (Mathf.Abs(Input.GetAxis("Vertical")) >= 0.4f)
+            }
+            else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) >= 0.4f)
             {
                 newOptionTimer = 0;
                 menuOptions[currentlyOptionIndex].StopSelected();
@@ -108,7 +115,7 @@ public class MenuSelection : MonoBehaviour
                 if (currentlyOptionIndex < 0)
                     currentlyOptionIndex += menuOptions.Count;
                 currentlyOptionIndex = Mathf.Abs(currentlyOptionIndex % menuOptions.Count);
-                
+
                 audioSource.clip = btnHighlightAudioClip;
                 audioSource.Play();
             }
@@ -159,6 +166,15 @@ public class MenuSelection : MonoBehaviour
                 {
                     SaveFileLoader.LoadFile("Assets/Resources/Save.txt", -1);
                     SaveFileLoader.SaveFileIndex = CurrentOptionOverride + 1;
+                }
+                if(menuOptionValues[CurrentOptionOverride].optionType == MenuOptionValues.OptionType.resume)
+                {
+                    menuOptionValues[CurrentOptionOverride].linkedObject.SetActive(false);
+                    Time.timeScale = 1;
+                }
+                if(menuOptionValues[CurrentOptionOverride].optionType == MenuOptionValues.OptionType.quitToMenu)
+                {
+                    SceneManager.LoadScene("MainMenu");
                 }
                 //if(menuOptionValues[CurrentOptionOverride].optionType == MenuOptionValues.OptionType.changeSetting)
                 //{

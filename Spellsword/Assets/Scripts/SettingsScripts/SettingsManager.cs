@@ -5,8 +5,8 @@ using UnityEngine.Audio;
 
 public class SettingsManager : MonoBehaviour
 {
-    static float soundEffectsVolume, musicVolume, brightness;
-    public enum SettingTypes { soundEffectsVolume, musicVolume, brightness}
+    public static float soundEffectsVolume, musicVolume, brightness, lookSpeed;
+    public enum SettingTypes { soundEffectsVolume, musicVolume, brightness, lookSpeed }
     [SerializeField]
     AudioMixer sfxMixer, musicMixer;
     static AudioMixer s_sfxMixer, s_musicMixer;
@@ -15,6 +15,7 @@ public class SettingsManager : MonoBehaviour
     {
         s_musicMixer = musicMixer;
         s_sfxMixer = sfxMixer;
+        lookSpeed = 1;
     }
 
     public static void UpdateSetting(SettingTypes in_settingType, float in_settingValue)
@@ -32,6 +33,10 @@ public class SettingsManager : MonoBehaviour
             case SettingTypes.brightness:
                 brightness = in_settingValue;
                 RenderSettings.ambientLight = new Color(in_settingValue, in_settingValue, in_settingValue);
+                break;
+            case SettingTypes.lookSpeed:
+                lookSpeed = in_settingValue + 0.5f;
+                Debug.Log("Look speed: " + lookSpeed);
                 break;
         }
     }

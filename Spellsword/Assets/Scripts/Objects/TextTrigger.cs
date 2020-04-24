@@ -112,6 +112,7 @@ public class TextTrigger : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
+        characterMovement = null;
         interactControllerText.gameObject.SetActive(false);
         interactKeyboardText.gameObject.SetActive(false);
     }

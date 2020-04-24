@@ -15,7 +15,7 @@
 
 
 [[LevelToLoad]]
-[Name=Catacombs/Obelisk=-1]
+[Name=ThePit/Obelisk=2]
 
 
 [[LevelData]]
@@ -30,6 +30,7 @@
 [ObjectName=ManaRegen/State=0]
 [ObjectName=Boss Fight/State=0]
 [ObjectName=SpellUsage/State=0]
+[ObjectName=JumpIntoPit/State=0]
 [LevelName=Ryan_SampleScene]
 [ObjectName=CrossSectionDoor/State=0]
 [ObjectName=IceSpell/State=0]

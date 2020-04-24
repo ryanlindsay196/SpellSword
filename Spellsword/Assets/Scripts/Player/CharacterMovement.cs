@@ -78,7 +78,7 @@ public class CharacterMovement : MonoBehaviour
         float verticalAngle = mainCamera.transform.eulerAngles.x;
         float horizontalAngle = mainCamera.transform.eulerAngles.y;
 
-        if(Input.GetButtonDown("Pause"))
+        if(Input.GetButtonDown("Pause") || pauseUI.gameObject.activeInHierarchy)
         {
             Debug.Log("Trying to pause game");
             Time.timeScale = 0;
@@ -198,11 +198,13 @@ public class CharacterMovement : MonoBehaviour
 
     void RotateView()
     {
-        Vector2 desiredRotation = RotationDirection();
-
-        float maxRotationSpeed = 1.1f;
-        if (desiredRotation.magnitude > maxRotationSpeed)
-            desiredRotation = desiredRotation.normalized * maxRotationSpeed;
+        Vector2 desiredRotation = RotationDirection() * SettingsManager.lookSpeed;
+        Debug.Log("CharacterMovement::RotateView()::SettingsManager.lookSpeed: " + SettingsManager.lookSpeed);
+        if (SettingsManager.lookSpeed == 0)
+            SettingsManager.lookSpeed = 1;
+        float maxRotationSpeed = 0.6f;
+        if (desiredRotation.magnitude > maxRotationSpeed * SettingsManager.lookSpeed)
+            desiredRotation = desiredRotation.normalized * maxRotationSpeed * SettingsManager.lookSpeed;
 
         //cameraHolder.transform.Rotate(new Vector3(desiredRotation.x, desiredRotation.y, 0) * turnSpeed);
         cameraHolder.transform.localEulerAngles += new Vector3(desiredRotation.x, desiredRotation.y, 0) * turnSpeed;
@@ -231,6 +233,6 @@ public class CharacterMovement : MonoBehaviour
     public Vector2 RotationDirection()
     {
         //return new Vector2(-Input.GetAxis("Mouse Y") - (Input.GetAxis("Look Y") * rotationSensitivityOnController), Input.GetAxis("Mouse X") + Input.GetAxis("Look X") * rotationSensitivityOnController);
-        return new Vector2(-Input.GetAxis("Mouse Y") - (Input.GetAxis("Look Y") * rotationSensitivityOnController), Input.GetAxis("Mouse X") + Input.GetAxis("Look X") * rotationSensitivityOnController);
+        return new Vector2(-Input.GetAxis("Mouse Y") - (Input.GetAxis("Look Y") * rotationSensitivityOnController), Input.GetAxis("Mouse X") + Input.GetAxis("Look X") * rotationSensitivityOnController) / 2;
     }
 }

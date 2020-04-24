@@ -193,6 +193,7 @@ public class EnemyStats : MonoBehaviour
         if (hitSound != null)
         {
             audioSource.clip = hitSound;
+            audioSource.Play();
             Debug.Log("Hitsound changed");
         }
 

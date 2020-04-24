@@ -100,12 +100,18 @@ public class MenuSelection : MonoBehaviour
         #region navigate between menu options
         if (true)//!GetComponent<CanvasRenderer>().cull)
         {
-            Debug.Log("Timescale = " + Time.timeScale);
+            //Debug.Log("Timescale = " + Time.timeScale);
             //if (Time.timeScale < 0.5)
             //    newOptionTimer = newOptionMaxTime;
             if (newOptionTimer < newOptionMaxTime)
             {
                 newOptionTimer += Time.deltaTime;
+                
+                if (Time.timeScale == 0)
+                {
+                    Debug.Log("Timescale == 0");
+                    newOptionTimer += 0.02f;
+                }
             }
             else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) >= 0.4f)
             {

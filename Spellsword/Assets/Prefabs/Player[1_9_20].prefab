@@ -35685,6 +35685,8 @@ MonoBehaviour:
   playerArms: {fileID: 5674148827138523655}
   saveFileLoader: {fileID: 0}
   lockedSprite: {fileID: 21300000, guid: 8d67341789723ae4cbbc9d1bc3a9be8b, type: 3}
+  bloodSplatterPrefab: {fileID: 2597583773736478127, guid: 95a1030c9f3e4654bad75eed213338a0,
+    type: 3}
   enchantmentsUnlocked: 000000
   playerStats: {fileID: 756213819139072578}
   currentEnchantment: 0

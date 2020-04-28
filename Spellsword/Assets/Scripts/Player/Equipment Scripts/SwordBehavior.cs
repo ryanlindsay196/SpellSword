@@ -10,6 +10,9 @@ public class SwordBehavior : EquipmentParent
     [SerializeField]
     Sprite lockedSprite;
 
+    [SerializeField]
+    GameObject bloodSplatterPrefab;
+
 
     /// <summary>
     /// After finishing the current attack, attack again if true
@@ -241,6 +244,8 @@ public class SwordBehavior : EquipmentParent
                 playerStats.CurrentMana += playerStats.MaxMana * 0.2f;
                 isAttacking = false;
             }
+            if(collision.gameObject.activeInHierarchy)
+                Instantiate(bloodSplatterPrefab, transform.position, transform.rotation);
         }
     }
 }

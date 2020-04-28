@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: BlackCrystal_mat
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ShaderKeywords: _EMISSION _METALLICSPECGLOSSMAP _NORMALMAP
+  m_ShaderKeywords: _EMISSION _NORMALMAP
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -21,23 +21,23 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: cff0c1f0d03e1454d8cac050431a5efe, type: 3}
+        m_Texture: {fileID: 2800000, guid: 135102255d4ead14e9b24004c3b05dd2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: ef5e550d14792534c8356d49cd35b195, type: 3}
+        m_Texture: {fileID: 2800000, guid: a9c20e3b19d8a464abcfb0f5516443a5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 74452d20ba4f92f4695c484b8d632dec, type: 3}
+        m_Texture: {fileID: 2800000, guid: bcccbc910aed7094f891d198bf172867, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: cff0c1f0d03e1454d8cac050431a5efe, type: 3}
+        m_Texture: {fileID: 2800000, guid: 135102255d4ead14e9b24004c3b05dd2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: b2f558b7dd430bf4aad24d1ba95ec935, type: 3}
+        m_Texture: {fileID: 2800000, guid: a442bfffca4d0e440a49cc9feaea8f61, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:

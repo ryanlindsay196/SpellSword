@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: GreenCrystal_mat
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ShaderKeywords: _EMISSION _METALLICSPECGLOSSMAP _NORMALMAP
+  m_ShaderKeywords: _EMISSION _NORMALMAP
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -21,23 +21,23 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 994f96e2d11f5d945aaebd245ffd6322, type: 3}
+        m_Texture: {fileID: 2800000, guid: c144f850b92d11e4b9b78a3a94a52b1c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: abf41f51d8a3e224a865f08e555f8f73, type: 3}
+        m_Texture: {fileID: 2800000, guid: 63c4965b8e1a7bd4f9d47996fc157ac8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 5bf532c70aa2d974db4c3f9c3523be9c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5a7a6b995dc755440911014b48733845, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 994f96e2d11f5d945aaebd245ffd6322, type: 3}
+        m_Texture: {fileID: 2800000, guid: c144f850b92d11e4b9b78a3a94a52b1c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 6dc1f234a57aa914a8d6f1752d3f9689, type: 3}
+        m_Texture: {fileID: 2800000, guid: fb172647f1cfd9744a3bb685dd9c5bf9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:

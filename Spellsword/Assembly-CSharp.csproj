@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\EnemyStats.cs" />
     <Compile Include="Assets\Scripts\GoToLevel.cs" />
     <Compile Include="Assets\Scripts\MenuSelection.cs" />
+    <Compile Include="Assets\Scripts\Objects\BloodSplatter.cs" />
     <Compile Include="Assets\Scripts\Objects\Pickups\PagePickup.cs" />
     <Compile Include="Assets\Scripts\Objects\SaveObelisk.cs" />
     <Compile Include="Assets\Scripts\Objects\SpawnVine.cs" />

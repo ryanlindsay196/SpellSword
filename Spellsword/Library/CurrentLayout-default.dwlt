@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 544}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 275, y: 172}
   m_MaxSize: {x: 4002, y: 8022}
   vertical: 1
-  controlID: 974
+  controlID: 126
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 52
+  controlID: 53
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 222}
   m_MaxSize: {x: 8004, y: 4022}
   vertical: 0
-  controlID: 53
+  controlID: 54
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -315,14 +315,14 @@ MonoBehaviour:
     y: 0
     width: 966
     height: 635
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 21}
+  m_MinSize: {x: 204, y: 222}
+  m_MaxSize: {x: 4004, y: 4022}
+  m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
   - {fileID: 16}
   - {fileID: 21}
-  m_Selected: 2
+  m_Selected: 0
   m_LastSelected: 2
 --- !u!114 &14
 MonoBehaviour:
@@ -353,15 +353,32 @@ MonoBehaviour:
   m_ViewTransforms:
     m_KeySerializationHelper:
     - {fileID: -5739729428876398014, guid: dcff50910a389714ca8783cb34bf32b6, type: 2}
+    - {fileID: 2332722921101522656, guid: 890127186d81fa343924a565b4cfc261, type: 2}
     m_ValueSerializationHelper:
-    - e00: 1
+    - e00: 0.18367347
       e01: 0
       e02: 0
-      e03: -160
+      e03: 92.14285
       e10: 0
-      e11: 1
+      e11: 0.18367347
       e12: 0
-      e13: -87
+      e13: 113.55102
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.99981725
+      e01: 0
+      e02: 0
+      e03: -135.70586
+      e10: 0
+      e11: 0.99981725
+      e12: 0
+      e13: 96.37305
       e20: 0
       e21: 0
       e22: 1
@@ -559,7 +576,7 @@ MonoBehaviour:
     height: 293
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
-    m_NameFilter: 
+    m_NameFilter: player
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -571,20 +588,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Animators
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/Animators
+  - Assets
   m_LastFoldersGridSize: 57
   m_LastProjectPath: C:\Users\Ryan\Desktop\Capstone\Game\Spell Sword 2\Spellsword
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 111}
-    m_SelectedIDs: f0610000
-    m_LastClickedID: 25072
-    m_ExpandedIDs: 00000000363700002053000028560000845600009e660000d86d00009471000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 0000000074580000be6f00004c7200008e7200001c7c0000e27f0000d2850000da88000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -612,7 +629,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000363700002053000028560000845600009e660000d86d000094710000
+    m_ExpandedIDs: 0000000074580000be6f00004c7200008e720000e27f0000d2850000da880000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -700,7 +717,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewResizer:
-    m_CachedPref: 470
+    m_CachedPref: 189
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
@@ -735,23 +752,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f0d20000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 640efcff9e0efcffcc0efcff160ffcff3410fcff6afbffff
+      m_SelectedIDs: e8d90200
+      m_LastClickedID: 186856
+      m_ExpandedIDs: 029cf8ff089cf8ff149cf8ffb8d80200c4d80200d4d802001ed90200deda0200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Text (TMP)
+        m_OriginalName: Text (TMP)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 186744
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 6}
       m_SearchString: 
@@ -790,16 +807,16 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: 10338c6b9f1f63e4d821db0b4f5e4986
   m_Gizmos: 1
-  m_SceneIsLit: 1
+  m_SceneIsLit: 0
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 212.1666, y: 6.1680937, z: 60.322495}
+    m_Target: {x: 481.99985, y: 299.49997, z: -0.000015258789}
     speed: 2
-    m_Value: {x: 212.1666, y: 6.1680937, z: 60.322495}
+    m_Value: {x: 481.99954, y: 299.49982, z: -0.0000812866}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -810,7 +827,7 @@ MonoBehaviour:
   m_SceneViewState:
     showFog: 1
     showMaterialUpdate: 0
-    showSkybox: 1
+    showSkybox: 0
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -828,13 +845,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.098121256, y: 0.80246747, z: -0.13759165, w: 0.57226634}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
     m_Value: {x: 0.09812116, y: 0.8024667, z: -0.13759151, w: 0.5722658}
   m_Size:
-    m_Target: 3.5036798
+    m_Target: 803.87274
     speed: 2
-    m_Value: 3.5036798
+    m_Value: 769.2562
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -909,7 +926,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1

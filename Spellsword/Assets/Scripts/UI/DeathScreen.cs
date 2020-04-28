@@ -26,7 +26,7 @@ public class DeathScreen : MonoBehaviour
 
         if (pHP <= 0)
         { if (!deathCanvas.gameObject.activeInHierarchy) { deathCanvas.gameObject.SetActive(true); } }
-        else
+        else if(Input.GetButton("UseSpell") || Input.GetButton("Jump"))
         { if (deathCanvas.gameObject.activeInHierarchy) { deathCanvas.gameObject.SetActive(false); } }
 
     }

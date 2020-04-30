@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
+    Vector3 initialPosition;
+    Quaternion initialRotation;
+
     [SerializeField]
     PlayerSoundManager playerSoundManager;
     //[SerializeField]
@@ -63,6 +66,9 @@ public class PlayerStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        initialPosition = transform.position;
+        initialRotation = GetComponent<CharacterMovement>().CameraHolder.transform.rotation;
+
         statusTrackers = new List<StatusTrackers>();
         saveFileLoader = FindObjectOfType<SaveFileLoader>();
         allObelisks = FindObjectsOfType<SaveObelisk>();
@@ -134,6 +140,11 @@ public class PlayerStats : MonoBehaviour
         {
             transform.position = lastSaveObelisk.RespawnTransform.transform.position;
             GetComponent<CharacterMovement>().CameraHolder.transform.rotation = lastSaveObelisk.RespawnTransform.transform.rotation;
+        }
+        else
+        {
+            transform.position = initialPosition;
+            GetComponent<CharacterMovement>().CameraHolder.transform.rotation = initialRotation;
         }
         //transform.rotation = lastSaveObelisk.RespawnTransform.transform.rotation;
         CurrentHealth = maxHealth;

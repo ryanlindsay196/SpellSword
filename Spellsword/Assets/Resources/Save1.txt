@@ -1,6 +1,6 @@
 [[Spells]]
 [Name=Fireball/Level=1]
-[Name=Frost/Level=0]
+[Name=Frost/Level=1]
 [Name=Shock Orb/Level=0]
 [Name=Corrosion/Level=0]
 
@@ -15,7 +15,7 @@
 
 
 [[LevelToLoad]]
-[Name=ThePit/Obelisk=2]
+[Name=Catacombs/Obelisk=-1]
 
 
 [[LevelData]]

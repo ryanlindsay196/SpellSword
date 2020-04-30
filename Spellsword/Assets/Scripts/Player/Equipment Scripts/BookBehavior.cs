@@ -237,10 +237,13 @@ public class BookBehavior : EquipmentParent
     }
     void SpawnSpell()
     {
-        Instantiate(spellPrefabs[currentPageIndex], spellSpawnTransform.position, spellSpawnTransform.rotation);
-        spellCooldownTimer = spellPrefabs[currentPageIndex].GetComponent<Spell>().CoolDownMaxTime;
-        GameObject.FindObjectOfType<PlayerStats>().UseMana(spellPrefabs[currentPageIndex].GetComponent<Spell>().ManaCost);
-        playerArms.SetBool("IsUsingSpell", false);
+        if (playerArms.GetBool("IsUsingSpell"))
+        {
+            Instantiate(spellPrefabs[currentPageIndex], spellSpawnTransform.position, spellSpawnTransform.rotation);
+            spellCooldownTimer = spellPrefabs[currentPageIndex].GetComponent<Spell>().CoolDownMaxTime;
+            GameObject.FindObjectOfType<PlayerStats>().UseMana(spellPrefabs[currentPageIndex].GetComponent<Spell>().ManaCost);
+            playerArms.SetBool("IsUsingSpell", false);
+        }
     }
 
     public override bool SwitchingEquipment()

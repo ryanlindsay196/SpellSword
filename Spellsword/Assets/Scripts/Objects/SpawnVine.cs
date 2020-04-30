@@ -9,7 +9,7 @@ public class SpawnVine : MonoBehaviour
     
     public GameObject plantPrefab;   
     public Transform plantSpawnPos;  //transform is a child object to gameObject       
-    public Transform plantTwoSpawnPos;  //transform is a child object to gameObject   
+
     public Transform plantThreeSpawnPos;  //transform is a child object to gameObject 
 
     public GameObject ghoulPrefab;
@@ -32,8 +32,7 @@ public class SpawnVine : MonoBehaviour
 
                 GameObject newPlant = Instantiate(plantPrefab, plantSpawnPos);  
                 newPlant.transform.localPosition = Vector3.zero;   
-                GameObject new2ndPlant = Instantiate(plantPrefab, plantTwoSpawnPos);  
-                new2ndPlant.transform.localPosition = Vector3.zero;
+
                 GameObject new3rdPlant = Instantiate(plantPrefab, plantThreeSpawnPos);
                 new3rdPlant.transform.localPosition = Vector3.zero;
 

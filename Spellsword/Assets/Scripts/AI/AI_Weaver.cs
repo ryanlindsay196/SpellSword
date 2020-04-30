@@ -51,6 +51,7 @@ public class AI_Weaver : MonoBehaviour
     //Start the Encounter by setting this = true
     private bool spottedHim = false;
     private bool needToMove = false;
+    private bool attackHim = false;
 
     void Start()
     {
@@ -133,15 +134,6 @@ public class AI_Weaver : MonoBehaviour
                 if (distanceToTarget > maxDistance)
                 {
                     agent.destination = tarPos;
-                    if(spottedHim == true)
-                    {
-                        if (SecondsInCurrentState >= fireRate*2)
-                        {
-                            GameObject bullet = Instantiate(projectile, spawn.transform.position, Quaternion.LookRotation(Jeffery.transform.forward, Jeffery.transform.up)) as GameObject;
-                            projectile.GetComponent<Weaver_Fireball>().speed = 1.25f;
-                            SecondsInCurrentState = 0;
-                        }
-                    }
                 }
                 if (distanceToTarget > minDistance && distanceToTarget < maxDistance)
                 {
@@ -150,9 +142,14 @@ public class AI_Weaver : MonoBehaviour
                     {
                         if (SecondsInCurrentState >= fireRate)
                         {
-                            GameObject bullet = Instantiate(projectile, spawn.transform.position, Quaternion.LookRotation(Jeffery.transform.forward, Jeffery.transform.up)) as GameObject;
-                            projectile.GetComponent<Weaver_Fireball>().speed = 1.0f;
-                            SecondsInCurrentState = 0;
+                            StartCoroutine("Attack");
+                            if (attackHim == true)
+                            {
+                                GameObject bullet = Instantiate(projectile, spawn.transform.position, Quaternion.LookRotation(Jeffery.transform.forward, Jeffery.transform.up)) as GameObject;
+                                projectile.GetComponent<Weaver_Fireball>().speed = 1.0f;
+                                SecondsInCurrentState = 0;
+                                attackHim = false;
+                            }
                         }
                     }
                     else
@@ -165,9 +162,14 @@ public class AI_Weaver : MonoBehaviour
                     agent.destination += -vectorToPlayer;
                     if (SecondsInCurrentState >= (fireRate / 1.25))
                     {
-                        GameObject bullet = Instantiate(projectile, spawn.transform.position, Quaternion.LookRotation(Jeffery.transform.forward, Jeffery.transform.up)) as GameObject;
-                        projectile.GetComponent<Weaver_Fireball>().speed = 0.5f;
-                        SecondsInCurrentState = 0;
+                        StartCoroutine("Attack");
+                        if (attackHim == true)
+                        {
+                            GameObject bullet = Instantiate(projectile, spawn.transform.position, Quaternion.LookRotation(Jeffery.transform.forward, Jeffery.transform.up)) as GameObject;
+                            projectile.GetComponent<Weaver_Fireball>().speed = 0.5f;
+                            SecondsInCurrentState = 0;
+                            attackHim = false;
+                        }
                     }
                 }
                 break;
@@ -188,10 +190,24 @@ public class AI_Weaver : MonoBehaviour
             switch (myAIState)
             {
                 case AIState.Idle:
+                    gameObject.GetComponent<Animator>().SetBool("Idle", true);
+                    gameObject.GetComponent<Animator>().SetBool("Attack", false);
+                    gameObject.GetComponent<Animator>().SetBool("Walk", false);
                     break;
                 case AIState.Pursue:
+                    gameObject.GetComponent<Animator>().SetBool("Idle", false);
+                    gameObject.GetComponent<Animator>().SetBool("Attack", false);
+                    gameObject.GetComponent<Animator>().SetBool("Walk", true);
                     break;
             }
         }
+    }
+
+    IEnumerator Attack()
+    {
+        gameObject.GetComponent<Animator>().SetBool("Attack", true);
+        yield return new WaitForSeconds(0.25f);
+        attackHim = true;
+        gameObject.GetComponent<Animator>().SetBool("Attack", false);
     }
 }

@@ -166,11 +166,7 @@ public class AI_Weaver : MonoBehaviour
                         if (attackHim == true)
                         {
                             GameObject bullet = Instantiate(projectile, spawn.transform.position, Quaternion.LookRotation(Jeffery.transform.forward, Jeffery.transform.up)) as GameObject;
-<<<<<<< HEAD
                             projectile.GetComponent<Weaver_Fireball>().speed = 0.5f;
-=======
-                            projectile.GetComponent<Weaver_Fireball>().speed = 0.8f;
->>>>>>> 1962bd466c608eee39907057690033e26b3a11bd
                             SecondsInCurrentState = 0;
                             attackHim = false;
                         }

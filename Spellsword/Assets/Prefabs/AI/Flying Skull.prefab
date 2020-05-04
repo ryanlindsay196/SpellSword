@@ -29439,12 +29439,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7986249860330243914, guid: a8441c4a4e2c23f4e9342fb6824d67da,
+    - target: {fileID: 3723667539291514140, guid: a8441c4a4e2c23f4e9342fb6824d67da,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: edc317f3a2e3ccc4b8f3445e3ab1ae0d, type: 2}
+    - target: {fileID: 4241956065459458215, guid: a8441c4a4e2c23f4e9342fb6824d67da,
         type: 3}
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 4241956065459458215, guid: a8441c4a4e2c23f4e9342fb6824d67da,
+    - target: {fileID: -7986249860330243914, guid: a8441c4a4e2c23f4e9342fb6824d67da,
         type: 3}
       propertyPath: m_Layer
       value: 12

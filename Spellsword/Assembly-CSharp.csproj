@@ -66,6 +66,7 @@
     <Compile Include="Assets\BossSpawner.cs" />
     <Compile Include="Assets\DEBUG_RadialMenu.cs" />
     <Compile Include="Assets\HARBINGER.cs" />
+    <Compile Include="Assets\LoadHarbingerScene.cs" />
     <Compile Include="Assets\Scripts\AI\AI_Brawler.cs" />
     <Compile Include="Assets\Scripts\AI\AI_Brawler_NoPatrol.cs" />
     <Compile Include="Assets\Scripts\AI\AI_Sentry.cs" />
@@ -130,12 +131,14 @@
     <Compile Include="Assets\Scripts\UI\SpellUI.cs" />
     <Compile Include="Assets\Scripts\UI\StatsUI.cs" />
     <Compile Include="Assets\SkullBlast.cs" />
+    <Compile Include="Assets\TeleportToBoss.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Resources\Save1.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\Resources\Save0.txt" />
     <None Include="Assets\Resources\Sav.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />

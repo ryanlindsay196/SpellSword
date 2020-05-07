@@ -28,7 +28,7 @@ public class HARBINGER : MonoBehaviour
     //His Attack
     public GameObject spawn;
     public GameObject skull;
-    private int phaseNum = 0;
+    public int phaseNum = 0;
     public GameObject portal1;
     public GameObject portal2;
     public GameObject portal3;

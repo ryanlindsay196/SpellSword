@@ -28,8 +28,10 @@ public class HARBINGER : MonoBehaviour
     //His Attack
     public GameObject spawn;
     public GameObject skull;
+    private int phaseNum = 0;
     public GameObject portal1;
     public GameObject portal2;
+    public GameObject portal3;
 
     //All Target GameObjects
     private GameObject playerToKill;
@@ -122,17 +124,23 @@ public class HARBINGER : MonoBehaviour
                     }
                 }
 
-                if(portal2.GetComponentInChildren<BossSpawner>().maxEnemies == 0 && portal1.GetComponentInChildren<BossSpawner>().maxEnemies == 0)
+                if(phaseNum == 1 && portal1.GetComponentInChildren<BossSpawner>().maxEnemies == 0)
+                {
+                    SetAIState(AIState.Damage);
+                }
+
+                if (phaseNum == 2 && portal1.GetComponentInChildren<BossSpawner>().maxEnemies == 0 && portal2.GetComponentInChildren<BossSpawner>().maxEnemies == 0)
+                {
+                    SetAIState(AIState.Damage);
+                }
+
+                if (phaseNum >= 3 && portal1.GetComponentInChildren<BossSpawner>().maxEnemies == 0 && portal2.GetComponentInChildren<BossSpawner>().maxEnemies == 0 && portal3.GetComponentInChildren<BossSpawner>().maxEnemies == 0)
                 {
                     SetAIState(AIState.Damage);
                 }
 
                 break;
             case AIState.Damage:
-                if(SecondsInCurrentState > 1)
-                {
-                    gameObject.GetComponent<Animator>().speed = 0;
-                }
                 if(SecondsInCurrentState > 10)
                 {
                     SetAIState(AIState.Immune);
@@ -158,11 +166,25 @@ public class HARBINGER : MonoBehaviour
                     break;
                 case AIState.Immune:
                     gameObject.GetComponent<Animator>().SetBool("Stun", false);
-                    gameObject.GetComponent<Animator>().speed = 1;
                     portal1.GetComponentInChildren<BossSpawner>().maxEnemies = 3;
                     portal2.GetComponentInChildren<BossSpawner>().maxEnemies = 3;
-                    portal1.SetActive(true);
-                    portal2.SetActive(true);
+                    portal3.GetComponentInChildren<BossSpawner>().maxEnemies = 3;
+                    phaseNum++;
+                    if (phaseNum == 1)
+                    {
+                        portal1.SetActive(true);
+                    }
+                    if (phaseNum == 2)
+                    {
+                        portal1.SetActive(true);
+                        portal2.SetActive(true);
+                    }
+                    if (phaseNum >= 3)
+                    {
+                        portal1.SetActive(true);
+                        portal2.SetActive(true);
+                        portal3.SetActive(true);
+                    }
                     break;
                 case AIState.Damage:
                     gameObject.GetComponent<Animator>().SetBool("Stun", true);

@@ -340,6 +340,7 @@ Assets\Scripts\Objects\BloodSplatter.cs
 Assets\Scripts\Objects\Pickups\PagePickup.cs
 Assets\Scripts\Objects\SaveObelisk.cs
 Assets\Scripts\Objects\SpawnVine.cs
+"Assets\Scripts\Objects\Spell Interactable Objects\BarsMelt.cs"
 "Assets\Scripts\Objects\Spell Interactable Objects\SpellInteractableObject.cs"
 "Assets\Scripts\Objects\Spell Interactable Objects\Torch.cs"
 "Assets\Scripts\Objects\Spell Interactable Objects\Vines.cs"

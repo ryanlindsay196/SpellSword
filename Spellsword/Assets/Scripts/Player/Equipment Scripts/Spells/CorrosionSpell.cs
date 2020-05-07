@@ -53,6 +53,8 @@ public class CorrosionSpell : Spell
     {
         base.OnCollisionEnter(collision);
         Debug.Log("Corrosion hit enemy");
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
         audioSource.clip = hitAudioClip;
         audioSource.Play();
     }

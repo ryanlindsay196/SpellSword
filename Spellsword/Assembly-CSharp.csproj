@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\Objects\Pickups\PagePickup.cs" />
     <Compile Include="Assets\Scripts\Objects\SaveObelisk.cs" />
     <Compile Include="Assets\Scripts\Objects\SpawnVine.cs" />
+    <Compile Include="Assets\Scripts\Objects\Spell Interactable Objects\BarsMelt.cs" />
     <Compile Include="Assets\Scripts\Objects\Spell Interactable Objects\SpellInteractableObject.cs" />
     <Compile Include="Assets\Scripts\Objects\Spell Interactable Objects\Torch.cs" />
     <Compile Include="Assets\Scripts\Objects\Spell Interactable Objects\Vines.cs" />

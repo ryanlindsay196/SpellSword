@@ -109,7 +109,7 @@ public class MenuSelection : MonoBehaviour
                 
                 if (Time.timeScale == 0)
                 {
-                    Debug.Log("Timescale == 0");
+                    //Debug.Log("Timescale == 0");
                     newOptionTimer += 0.02f;
                 }
             }

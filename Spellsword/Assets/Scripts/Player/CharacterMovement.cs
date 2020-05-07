@@ -199,7 +199,7 @@ public class CharacterMovement : MonoBehaviour
     void RotateView()
     {
         Vector2 desiredRotation = RotationDirection() * SettingsManager.lookSpeed;
-        Debug.Log("CharacterMovement::RotateView()::SettingsManager.lookSpeed: " + SettingsManager.lookSpeed);
+        //Debug.Log("CharacterMovement::RotateView()::SettingsManager.lookSpeed: " + SettingsManager.lookSpeed);
         if (SettingsManager.lookSpeed == 0)
             SettingsManager.lookSpeed = 1;
         float maxRotationSpeed = 0.6f;

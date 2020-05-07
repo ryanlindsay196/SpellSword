@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BurnV2Mat_Bars
+  m_Shader: {fileID: -6465566751694194690, guid: 1e232f2269694d94ab5c2b847cec1886,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Texture2D_9989AC0A:
+        m_Texture: {fileID: 2800000, guid: 5c71a89fea2830f49b52cd53304be700, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_B47FE8D7:
+        m_Texture: {fileID: 2800000, guid: 167edd0f699a19c4e931dee1554e68b6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Vector1_58B01F9F: 0.03
+    - _Vector1_CFE875CF: 0
+    - _Vector1_D9BC0F3A: 0
+    m_Colors:
+    - _Color_6475344F: {r: 0.8113208, g: 0.4600948, b: 0, a: 0}
+    - _Color_913804BE: {r: 0.8018868, g: 0, b: 0, a: 0}

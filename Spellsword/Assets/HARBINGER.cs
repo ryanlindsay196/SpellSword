@@ -28,6 +28,8 @@ public class HARBINGER : MonoBehaviour
     //His Attack
     public GameObject spawn;
     public GameObject skull;
+    public GameObject portal1;
+    public GameObject portal2;
 
     //All Target GameObjects
     private GameObject playerToKill;
@@ -49,6 +51,7 @@ public class HARBINGER : MonoBehaviour
     //Start the Encounter by setting this = true
     private bool spottedHim = false;
     private bool needToMove = false;
+    private bool attackHim = false;
 
     void Start()
     {
@@ -72,6 +75,7 @@ public class HARBINGER : MonoBehaviour
         currPos = Jeffery.transform.position;
         tarPos = playerToKill.transform.position;
         vectorToPlayer = tarPos - currPos;
+        vectorToPlayer.y = vectorToPlayer.y - 4;
         distanceToTarget = vectorToPlayer.magnitude;
 
         //Look towards the player
@@ -106,16 +110,33 @@ public class HARBINGER : MonoBehaviour
             case AIState.Idle:
                 break;
             case AIState.Immune:
-                Jeffery.transform.forward = Vector3.RotateTowards(Jeffery.transform.forward, playerToKill.transform.position - Jeffery.transform.position, 6.28f * Time.deltaTime, float.PositiveInfinity);
+                Jeffery.transform.forward = Vector3.RotateTowards(Jeffery.transform.forward, vectorToPlayer, 6.28f * Time.deltaTime, float.PositiveInfinity);
 
                 if (SecondsInCurrentState >= fireRate)
                 {
-                    GameObject bullet = Instantiate(skull, spawn.transform.position, Quaternion.LookRotation(Jeffery.transform.forward, Jeffery.transform.up)) as GameObject;
-                    SecondsInCurrentState = 0;
+                    StartCoroutine("Attack");
+                    if (SecondsInCurrentState >= fireRate + 1)
+                    {
+                        GameObject bullet = Instantiate(skull, spawn.transform.position, Quaternion.LookRotation(Jeffery.transform.forward, Jeffery.transform.up)) as GameObject;
+                        SecondsInCurrentState = 0;
+                    }
+                }
+
+                if(portal2.GetComponentInChildren<BossSpawner>().maxEnemies == 0 && portal1.GetComponentInChildren<BossSpawner>().maxEnemies == 0)
+                {
+                    SetAIState(AIState.Damage);
                 }
 
                 break;
             case AIState.Damage:
+                if(SecondsInCurrentState > 1)
+                {
+                    gameObject.GetComponent<Animator>().speed = 0;
+                }
+                if(SecondsInCurrentState > 10)
+                {
+                    SetAIState(AIState.Immune);
+                }
                 break;
         }
     }
@@ -136,10 +157,24 @@ public class HARBINGER : MonoBehaviour
                 case AIState.Idle:
                     break;
                 case AIState.Immune:
+                    gameObject.GetComponent<Animator>().SetBool("Stun", false);
+                    gameObject.GetComponent<Animator>().speed = 1;
+                    portal1.GetComponentInChildren<BossSpawner>().maxEnemies = 3;
+                    portal2.GetComponentInChildren<BossSpawner>().maxEnemies = 3;
+                    portal1.SetActive(true);
+                    portal2.SetActive(true);
                     break;
                 case AIState.Damage:
+                    gameObject.GetComponent<Animator>().SetBool("Stun", true);
                     break;
             }
         }
+    }
+
+    IEnumerator Attack()
+    {
+        gameObject.GetComponent<Animator>().SetBool("Cast", true);
+        yield return new WaitForSeconds(1.5f);
+        gameObject.GetComponent<Animator>().SetBool("Cast", false);
     }
 }

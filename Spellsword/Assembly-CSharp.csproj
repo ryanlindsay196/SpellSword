@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Auto Letterbox\ForceCameraRatio.cs" />
+    <Compile Include="Assets\BossSpawner.cs" />
     <Compile Include="Assets\DEBUG_RadialMenu.cs" />
     <Compile Include="Assets\HARBINGER.cs" />
     <Compile Include="Assets\Scripts\AI\AI_Brawler.cs" />

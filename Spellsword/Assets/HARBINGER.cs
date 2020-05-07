@@ -169,21 +169,24 @@ public class HARBINGER : MonoBehaviour
                     gameObject.GetComponent<BoxCollider>().enabled = false;
                     protectBubble.SetActive(true);
                     gameObject.GetComponent<Animator>().SetBool("Stun", false);
-                    portal1.GetComponentInChildren<BossSpawner>().maxEnemies = 3;
-                    portal2.GetComponentInChildren<BossSpawner>().maxEnemies = 3;
-                    portal3.GetComponentInChildren<BossSpawner>().maxEnemies = 3;
                     phaseNum++;
                     if (phaseNum == 1)
                     {
+                        portal1.GetComponentInChildren<BossSpawner>().maxEnemies = 3;
                         portal1.SetActive(true);
                     }
                     if (phaseNum == 2)
                     {
+                        portal1.GetComponentInChildren<BossSpawner>().maxEnemies = 2;
+                        portal2.GetComponentInChildren<BossSpawner>().maxEnemies = 2;
                         portal1.SetActive(true);
                         portal2.SetActive(true);
                     }
                     if (phaseNum >= 3)
                     {
+                        portal1.GetComponentInChildren<BossSpawner>().maxEnemies = 1;
+                        portal2.GetComponentInChildren<BossSpawner>().maxEnemies = 1;
+                        portal3.GetComponentInChildren<BossSpawner>().maxEnemies = 3;
                         portal1.SetActive(true);
                         portal2.SetActive(true);
                         portal3.SetActive(true);

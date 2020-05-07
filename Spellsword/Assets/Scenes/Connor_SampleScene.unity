@@ -21039,7 +21039,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831278336}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 5}
+  m_LocalPosition: {x: 0, y: 4, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6949502701421166081}
@@ -36729,7 +36729,7 @@ MonoBehaviour:
   hitSound: {fileID: 0}
   health: 100
   maxHealth: 100
-  swordDamagePercent: 5
+  swordDamagePercent: 7
   fireDamagePercent: 10
   iceDamagePercent: 5
   corrosionDamagePercent: 10

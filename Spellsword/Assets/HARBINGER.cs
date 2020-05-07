@@ -32,6 +32,7 @@ public class HARBINGER : MonoBehaviour
     public GameObject portal1;
     public GameObject portal2;
     public GameObject portal3;
+    public GameObject protectBubble;
 
     //All Target GameObjects
     private GameObject playerToKill;
@@ -165,6 +166,8 @@ public class HARBINGER : MonoBehaviour
                 case AIState.Idle:
                     break;
                 case AIState.Immune:
+                    gameObject.GetComponent<BoxCollider>().enabled = false;
+                    protectBubble.SetActive(true);
                     gameObject.GetComponent<Animator>().SetBool("Stun", false);
                     portal1.GetComponentInChildren<BossSpawner>().maxEnemies = 3;
                     portal2.GetComponentInChildren<BossSpawner>().maxEnemies = 3;
@@ -187,6 +190,8 @@ public class HARBINGER : MonoBehaviour
                     }
                     break;
                 case AIState.Damage:
+                    gameObject.GetComponent<BoxCollider>().enabled = true;
+                    protectBubble.SetActive(false);
                     gameObject.GetComponent<Animator>().SetBool("Stun", true);
                     break;
             }

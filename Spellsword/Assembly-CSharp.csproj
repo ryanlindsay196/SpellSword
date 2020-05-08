@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\AI\HitSomething.cs" />
     <Compile Include="Assets\Scripts\AI\SpawnMore.cs" />
     <Compile Include="Assets\Scripts\AI\Weaver_Fireball.cs" />
+    <Compile Include="Assets\Scripts\AI\WhenHarbingerDie.cs" />
     <Compile Include="Assets\Scripts\AI\WhenWeaverDie.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Audio\SwitchMusicTrigger.cs" />
@@ -132,6 +133,7 @@
     <Compile Include="Assets\Scripts\UI\StatsUI.cs" />
     <Compile Include="Assets\SkullBlast.cs" />
     <Compile Include="Assets\TeleportToBoss.cs" />
+    <Compile Include="Assets\textscroller.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

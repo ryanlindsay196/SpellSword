@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/MainMenu.unity
+=======
 - path: Assets/Scenes/HarbingerBattle.unity
+>>>>>>> 1e29d60b5eeac9d3f2a6362240c4089df7c83819
   isLoaded: 1
   isActive: 1
   isSubScene: 0

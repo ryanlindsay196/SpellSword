@@ -36729,9 +36729,9 @@ MonoBehaviour:
   hitSound: {fileID: 0}
   health: 100
   maxHealth: 100
-  swordDamagePercent: 7
-  fireDamagePercent: 10
-  iceDamagePercent: 5
+  swordDamagePercent: 11
+  fireDamagePercent: 15
+  iceDamagePercent: 8
   corrosionDamagePercent: 10
   shockDamagePercent: 12
 --- !u!4 &6209672689865605042

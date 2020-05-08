@@ -2355,8 +2355,8 @@ MonoBehaviour:
   maxHealth: 10
   swordDamagePercent: 15
   fireDamagePercent: 25
-  iceDamagePercent: 0
-  corrosionDamagePercent: 0
+  iceDamagePercent: 35
+  corrosionDamagePercent: 20
   shockDamagePercent: 0
 --- !u!114 &4656634201484709317
 MonoBehaviour:

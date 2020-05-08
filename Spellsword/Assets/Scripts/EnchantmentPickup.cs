@@ -19,6 +19,35 @@ public class EnchantmentPickup : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<CharacterMovement>() != null)
+        {
+            EquipmentManager equipmentManager = FindObjectOfType<EquipmentManager>();
+            //foreach (GameObject spellPrefab in book.SpellPrefabs)
+            SwordBehavior sword = null;
+            for (int i = 0; i < equipmentManager.Equipment.Count; i++)
+            {
+                if (equipmentManager.Equipment[i].GetComponent<SwordBehavior>() != null)
+                {
+                    sword = equipmentManager.Equipment[i].GetComponent<SwordBehavior>();
+                    break;
+                }
+            }
+            if (sword != null)
+            {
+                sword.UnlockEnchantment(indexOfEnchantmentToUnlock, false);
+                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerSoundManager>().SpellPickup();
+                Destroy(gameObject);
+            }
+            else
+            {
+                throw new System.Exception("PagePickup::OnCollisionEnter(Collision)::Book is null");
+            }
+        }
+    }
+
+    /*
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.GetComponent<CharacterMovement>() != null)
@@ -46,4 +75,5 @@ public class EnchantmentPickup : MonoBehaviour
             }
         }
     }
+    */
 }

@@ -33776,6 +33776,104 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+<<<<<<< HEAD
+=======
+--- !u!1001 &284628963040017113
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6822481969184145817}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_Name
+      value: Sword_G490_SpellSword_FixedUVs_ES
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.038
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0442
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0347
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.66474783
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.26975065
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.26680723
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6435518
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -134.63
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 87.60899
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -87.867004
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.28571448
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.28571436
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2857144
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 70ba9ef4dfbf052428723c2e5b5ef69f, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d8ded37a2c0f474ea8f9300ce763aaf, type: 3}
+--- !u!4 &5082734693327049155 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 9d8ded37a2c0f474ea8f9300ce763aaf,
+    type: 3}
+  m_PrefabInstance: {fileID: 284628963040017113}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of 2faa3a18... retextured sword
 --- !u!1001 &2939073085011632605
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class BookBehavior : EquipmentParent
 {
+    [SerializeField]
+    List<GameObject> staticPages;
+
     [System.Serializable]
     struct SoundIndices
     {
@@ -103,6 +106,15 @@ public class BookBehavior : EquipmentParent
     void StopTurningPageAnimation()
     {
         playerArms.SetBool("IsTurningPage", false);
+        if(staticPages[CurrentPageIndex] != null)
+        {
+            for(int i = 0; i < staticPages.Count; i++)
+            {
+                if(staticPages[i] != null)
+                    staticPages[i].SetActive(false);
+            }
+            staticPages[CurrentPageIndex].SetActive(true);
+        }
     }
 
     // Start is called before the first frame update
@@ -112,7 +124,7 @@ public class BookBehavior : EquipmentParent
         soundIndices.bookCanClose = true;
         pageSwitchMaxTime = 0.32f;
         pageSwitchTimer = pageSwitchMaxTime;
-
+        StopTurningPageAnimation();
         if (spellRadialMenu.SpellRadialMenuSpritesDisplay == null)
             spellRadialMenu.InitializeMenu();
 

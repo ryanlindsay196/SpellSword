@@ -33926,11 +33926,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookCentered
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 42879f2f69d744b4299eda5b83df204c,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: ecb58733de62ffe46a4a0671d5606c3f, type: 2}
     - target: {fileID: -4216859302048453862, guid: 42879f2f69d744b4299eda5b83df204c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34001,6 +33996,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 42879f2f69d744b4299eda5b83df204c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ecb58733de62ffe46a4a0671d5606c3f, type: 2}
     - target: {fileID: -3341582605709027290, guid: 42879f2f69d744b4299eda5b83df204c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

@@ -24512,9 +24512,9 @@ MonoBehaviour:
   health: 0
   maxHealth: 1
   swordDamagePercent: 0
-  fireDamagePercent: 0
+  fireDamagePercent: 10
   iceDamagePercent: 100
-  corrosionDamagePercent: 0
+  corrosionDamagePercent: 30
   shockDamagePercent: 0
 --- !u!1 &8487495627362597186
 GameObject:
@@ -29334,31 +29334,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7421209903818273671}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: a8441c4a4e2c23f4e9342fb6824d67da,
-        type: 3}
-      propertyPath: m_Name
-      value: Skull
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: a8441c4a4e2c23f4e9342fb6824d67da,
-        type: 3}
-      propertyPath: m_TagString
-      value: Flying Skull
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: a8441c4a4e2c23f4e9342fb6824d67da,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8330332193229692421, guid: a8441c4a4e2c23f4e9342fb6824d67da,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636034113341914592, guid: a8441c4a4e2c23f4e9342fb6824d67da,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a8441c4a4e2c23f4e9342fb6824d67da,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29428,6 +29403,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: a8441c4a4e2c23f4e9342fb6824d67da,
+        type: 3}
+      propertyPath: m_Name
+      value: Skull
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: a8441c4a4e2c23f4e9342fb6824d67da,
+        type: 3}
+      propertyPath: m_TagString
+      value: Flying Skull
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: a8441c4a4e2c23f4e9342fb6824d67da,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330332193229692421, guid: a8441c4a4e2c23f4e9342fb6824d67da,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6636034113341914592, guid: a8441c4a4e2c23f4e9342fb6824d67da,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -5339355619053426210, guid: a8441c4a4e2c23f4e9342fb6824d67da,
         type: 3}

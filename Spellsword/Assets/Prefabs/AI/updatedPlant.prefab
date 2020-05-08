@@ -1495,8 +1495,8 @@ MonoBehaviour:
   maxHealth: 2
   swordDamagePercent: 3
   fireDamagePercent: 100
-  iceDamagePercent: 0
-  corrosionDamagePercent: 0
+  iceDamagePercent: 50
+  corrosionDamagePercent: 25
   shockDamagePercent: 0
 --- !u!114 &480530150949582210
 MonoBehaviour:
@@ -1786,6 +1786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2386677e343f7f47bd506da20202438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetTransform: {fileID: 0}
   isTargeted: 0
   meshRenderer: {fileID: 0}
   meshMat: {fileID: 2100000, guid: 753dc2c62ba9cb3499330297cd54f415, type: 2}

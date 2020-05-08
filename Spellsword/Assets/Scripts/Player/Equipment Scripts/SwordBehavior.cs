@@ -244,7 +244,7 @@ public class SwordBehavior : EquipmentParent
                 playerStats.CurrentMana += playerStats.MaxMana * 0.2f;
                 isAttacking = false;
             }
-            if(collision.gameObject.activeInHierarchy)
+            if(collision.gameObject.activeInHierarchy && collision.gameObject.layer == 12)
                 Instantiate(bloodSplatterPrefab, transform.position, transform.rotation);
         }
     }

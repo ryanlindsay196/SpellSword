@@ -25,6 +25,9 @@ public class HARBINGER : MonoBehaviour
     private GameObject Jeffery;
     public float fireRate;
 
+    // Sound Effects
+    public AudioClip shieldSoundClip;
+
     //His Attack
     public GameObject spawn;
     public GameObject skull;
@@ -166,6 +169,9 @@ public class HARBINGER : MonoBehaviour
                 case AIState.Idle:
                     break;
                 case AIState.Immune:
+                    // Play shield impact
+                    gameObject.GetComponent<AudioSource>().clip = shieldSoundClip;
+                    gameObject.GetComponent<AudioSource>().Play();
                     gameObject.GetComponent<BoxCollider>().enabled = false;
                     protectBubble.SetActive(true);
                     gameObject.GetComponent<Animator>().SetBool("Stun", false);

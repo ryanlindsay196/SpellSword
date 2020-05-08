@@ -30752,7 +30752,6 @@ MonoBehaviour:
   spellSprites:
   - {fileID: 21300000, guid: db75f29e85b446a488e98a959c24d9e3, type: 3}
   - {fileID: 21300000, guid: 2f1036b0c9ade034f99f051c625a8d80, type: 3}
-  - {fileID: 21300000, guid: 94cf6bef7af9ee14ca16b4cfb1f13850, type: 3}
   - {fileID: 21300000, guid: 4d966556dca81854795a37053518ca3f, type: 3}
   fanOutRadius: 100
   fanOutPercentSpeed: 0.4
@@ -34112,21 +34111,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 756213819661596250}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerArms_3-15-2020
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: dcff50910a389714ca8783cb34bf32b6, type: 2}
     - target: {fileID: -4216859302048453862, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34197,6 +34181,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: dcff50910a389714ca8783cb34bf32b6, type: 2}
+    - target: {fileID: -927199367670048503, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerArms_3-15-2020
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 721056895991426811, guid: f3d93ac4e7016bf4fb6c3a886e7bd156,
         type: 3}
       propertyPath: m_IsActive
@@ -34260,11 +34259,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookCentered
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 42879f2f69d744b4299eda5b83df204c,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: ecb58733de62ffe46a4a0671d5606c3f, type: 2}
     - target: {fileID: -4216859302048453862, guid: 42879f2f69d744b4299eda5b83df204c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34335,6 +34329,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 42879f2f69d744b4299eda5b83df204c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ecb58733de62ffe46a4a0671d5606c3f, type: 2}
     - target: {fileID: -3341582605709027290, guid: 42879f2f69d744b4299eda5b83df204c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

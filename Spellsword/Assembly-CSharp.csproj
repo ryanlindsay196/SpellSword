@@ -121,6 +121,7 @@
     <Compile Include="Assets\Scripts\SettingsScripts\BrightnessSetting.cs" />
     <Compile Include="Assets\Scripts\SettingsScripts\Setting.cs" />
     <Compile Include="Assets\Scripts\SettingsScripts\SettingsManager.cs" />
+    <Compile Include="Assets\Scripts\shieldImpact.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\SpawnAbilities.cs" />
     <Compile Include="Assets\Scripts\SpawnProjectiles.cs" />

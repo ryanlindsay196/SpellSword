@@ -2,7 +2,7 @@
 [Name=Fireball/Level=1]
 [Name=Frost/Level=1]
 [Name=Shock Orb/Level=0]
-[Name=Corrosion/Level=0]
+[Name=Corrosion/Level=1]
 
 
 [[Enchantments]]
@@ -15,7 +15,7 @@
 
 
 [[LevelToLoad]]
-[Name=ThePit/Obelisk=6]
+[Name=HarbingerBattle/Obelisk=0]
 
 
 [[LevelData]]
